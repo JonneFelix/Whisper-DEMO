@@ -4,7 +4,14 @@ Dieses Repository bietet eine einfache Möglichkeit, das OpenAI-Whisper-Modell z
 
 ## Anleitung
 
-### 1. Repository klonen
+### 1. Globale Umgebung deaktivieren (optional)
+
+Wenn du ein globales Python-Environment wie Conda verwendest, deaktiviere es zuerst:
+```bash
+conda deactivate
+```
+
+### 2. Repository klonen
 
 Klonen des Repositories in einen bestimmten Ordner:
 ```bash
@@ -13,28 +20,35 @@ git clone https://github.com/JonneFelix/Whisper-DEMO.git <ziel_ordner>
 cd <ziel_ordner>
 ```
 
-### 2. Virtuelle Umgebung erstellen
+### 3. Virtuelle Umgebung erstellen
 
 Erstelle eine virtuelle Umgebung mit dem Namen `whisper_venv`:
 ```bash
 python3 -m venv whisper_venv
 ```
 
-### 3. Virtuelle Umgebung aktivieren
+### 4. Virtuelle Umgebung aktivieren
 
 Aktiviere die virtuelle Umgebung:
 ```bash
 source whisper_venv/bin/activate
 ```
 
-### 4. Abhängigkeiten installieren
+### 5. Pip aktualisieren
+
+Bevor du die Abhängigkeiten installierst, stelle sicher, dass du die neueste Version von `pip` hast:
+```bash
+pip install --upgrade pip
+```
+
+### 6. Abhängigkeiten installieren
 
 Installiere die erforderlichen Abhängigkeiten:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Programm starten
+### 7. Programm starten
 
 #### Test-Skript starten
 Führe das Test-Skript aus, um das Whisper-Modell direkt zu testen:
@@ -50,7 +64,7 @@ Alternativ kannst du die Streamlit-Benutzeroberfläche nutzen:
 streamlit run app.py
 ```
 
-### 6. Streamlit-Anwendung verwenden
+### 8. Streamlit-Anwendung verwenden
 
 Die Streamlit-Anwendung bietet eine intuitive Oberfläche mit den folgenden Features:
 
