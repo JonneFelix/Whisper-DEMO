@@ -1,0 +1,8 @@
+[client]
+showErrorDetails = false
+showSidebarNavigation = true
+toolbarMode = "minimal"
+
+[theme]
+#primaryColor = "#00b4d8"
+#backgroundColor = "white"
